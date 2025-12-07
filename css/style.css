@@ -1,0 +1,53 @@
+body{
+    background:#000;
+    color:white;
+    margin:0;
+    font-family:Arial;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+    background:#111;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:red;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:red;
+}
+
+.section-title{
+    margin:20px;
+    font-size:22px;
+}
+
+.movie-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+.movie-grid img{
+    width:100%;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.movie-grid img:hover{
+    transform:scale(1.08);
+}
